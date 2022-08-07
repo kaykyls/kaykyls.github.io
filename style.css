@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body{
+    font-family: Montserrat, Arial;
+    font-size: 20px;
+    margin: 0px;
+    /* background: #eee; */
+}
+
+
+/* Logo e Navegação */
+
+header{
+    display: flex;
+    width: 100%;
+    /* background: linear-gradient(#fff, #f8f8f8); */
+    /* box-shadow: 0px 1px 3px #e0e0e0; */
+}
+
+.logo{
+    margin-left: 15vw;
+}
+
+.logo p{
+    font-size: 3rem;
+    font-weight: bold;
+    /* border-bottom: #153556 solid 2px; */
+}
+
+nav{
+    margin: 0px 15vw 0px auto;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover{
+    border-bottom: #336699 4px solid;
+    transition: 0.1s;
+}
+
+/* Principal */
+main{
+    margin: 30px 15vw 0px 15vw;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 150px 0px;
+}
+
+.textos{
+    margin-left: 2rem;
+}
+
+.textos h1{
+    font-size: 4rem;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.textos h2{
+    font-size: 2rem;
+    margin: 0px;
+}
+
+#kayky{
+    color: #86BBD8;
+}
+
+.contato{
+    background: #336699;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contato:hover{
+    background: #153556;
+    transition: 0.3s;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.foto img{
+    width: 500px;
+    /* border-bottom-right-radius: 200px;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 150px; */
+}
+
+/* Sobre */
+
+.sobre{
+    background: #eee;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px 3px #eee;
+}
+
+.sobreGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 15vw;
+    
+}
+
+.sobreGrid h2{
+    margin: 0px 4rem;
+    text-align: right;
+    font-size: 8rem;
+    color: #86BBD8;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.cert{
+    grid-column: 2;
+    display: flex;
+    font-size: 2rem;
+}
+
+.cert a{
+    background: #336699;
+    padding: 1rem 2rem;
+    grid-column: 2;
+    align-self: start;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.cert a:hover{
+    background: #153556;
+    transition: 0.3s;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+/* skills */
+
+.skills{
+    height: 50rem;
+    display: flex;
+    align-items: center;
+}
+
+.skillsGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 15vw;
+}
+
+.skillsTxt{
+    display: flex;
+}
+
+.skillsTxt h2{
+    font-size: 8rem;
+    color: #336699;
+    margin: 0px 4rem;
+    align-self: center;
+    border-bottom: #153556 solid 4px;
+}
+
+.skillsItems{
+    align-self: center;
+}
+
+.skillsItems p{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.ling ul li{
+    display: block;
+    list-style: none;
+    text-align: center;
+    margin: 1.5rem 0px
+}
+
+
+.skillsItemsGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 8rem;
+    background:#eee;
+    padding: 1rem 6rem;
+    border-radius: 4px;
+}
+
+.skillsItemsGrid img{
+    max-width: 2rem;
+    display: block;
+}
+
+.skillsItemsGrid li{
+    background: #fff;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.ling{
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    align-self: center;
+}
+
+.icons{
+    grid-row: 2;
+    grid-column: 1;
+    align-self: center;
+}
+
+.icons img{
+    margin: 1rem 0rem;
+}
