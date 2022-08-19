@@ -10,9 +10,10 @@ body{
 
 /* Logo e Navegação */
 
-header{
+.header{
     display: flex;
     width: 100%;
+    justify-content: space-between;
     /* background: linear-gradient(#fff, #f8f8f8); */
     /* box-shadow: 0px 1px 3px #e0e0e0; */
 }
@@ -27,50 +28,47 @@ header{
     /* border-bottom: #153556 solid 2px; */
 }
 
-nav{
-    margin: 0px 15vw 0px auto;
+.navbar{
+    margin-right: 15vw;
     display: flex;
     align-items: center;
 }
 
-nav ul li{
+.navbar ul li{
     display: inline-block;
     list-style: none;
     margin: 0px 15px;
 }
 
-nav ul li a{
+.navbar ul li a{
     text-decoration: none;
     color: #000;
     padding: 10px 20px;
 }
 
-nav ul li a:hover{
+.navbar ul li a:hover{
     border-bottom: #336699 4px solid;
     transition: 0.1s;
 }
 
 /* Principal */
-main{
-    margin: 30px 15vw 0px 15vw;
-}
 
-section{
+.main{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 150px 0px;
+    margin: 150px 15vw 150px 15vw;
 }
 
-.textos{
+.texts{
     margin-left: 2rem;
 }
 
-.textos h1{
+.texts h1{
     font-size: 4rem;
     margin: 0rem 0rem 1rem 0rem;
 }
 
-.textos h2{
+.texts .dev-text{
     font-size: 2rem;
     margin: 0px;
 }
@@ -98,7 +96,7 @@ img{
     max-height: 100%;
 }
 
-.foto img{
+.picture img{
     width: 500px;
     /* border-bottom-right-radius: 200px;
     border-top-left-radius: 200px;
@@ -110,20 +108,20 @@ img{
 
 .sobre{
     background: #eee;
-    height: 50rem;
+    height: 60rem;
     display: flex;
     align-items: center;
     box-shadow: 0px 1px 3px #eee;
 }
 
-.sobreGrid{
+.sobre-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0px 15vw;
     
 }
 
-.sobreGrid h2{
+.sobre-grid h2{
     margin: 0px 4rem;
     text-align: right;
     font-size: 8rem;
@@ -169,22 +167,24 @@ img{
 /* skills */
 
 .skills{
-    height: 50rem;
+    height: 60rem;
     display: flex;
     align-items: center;
 }
 
-.skillsGrid{
+.skills-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0px 15vw;
 }
 
-.skillsTxt{
+.skills-text{
     display: flex;
+    grid-column: 2;
+    grid-row: 1;
 }
 
-.skillsTxt h2{
+.skills-text h3{
     font-size: 8rem;
     color: #336699;
     margin: 0px 4rem;
@@ -192,16 +192,16 @@ img{
     border-bottom: #153556 solid 4px;
 }
 
-.skillsItems{
+.skills-items{
     align-self: center;
 }
 
-.skillsItems p{
+.skills-items p{
     text-align: center;
     font-size: 2rem;
 }
 
-.ling ul li{
+.lang ul li{
     display: block;
     list-style: none;
     text-align: center;
@@ -209,7 +209,7 @@ img{
 }
 
 
-.skillsItemsGrid{
+.skills-items-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0px 8rem;
@@ -218,18 +218,18 @@ img{
     border-radius: 4px;
 }
 
-.skillsItemsGrid img{
+.skills-items-grid img{
     max-width: 2rem;
     display: block;
 }
 
-.skillsItemsGrid li{
+.skills-items-grid li{
     background: #fff;
     padding: 4px;
     border-radius: 4px;
 }
 
-.ling{
+.lang{
     grid-column: 2;
     grid-row: 2;
     display: flex;
