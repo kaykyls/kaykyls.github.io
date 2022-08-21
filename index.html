@@ -7,7 +7,7 @@
     <title>Kayky's Portfolio</title>
     <link rel="stylesheet" href="/style.css">
 </head>
-<body id="#home">
+<body id="#home" class="light-mode">
     
     <header class="header">
         <div class="logo">
@@ -18,8 +18,8 @@
                 <li><a class="atual" href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contatos">Contato</a></li>
+                <!-- <li><a href="#projetos">Projetos</a></li> -->
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -31,9 +31,9 @@
         <div class="texts">
             <h1>Olá, me chamo <span id="kayky">Kayky</span></h1>
             <p class="dev-text">Desenvolvedor front-end</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <a class="contato" target="_blank" href="https://github.com/kaykyls">GitHub</a>
-            <a class="contato" target="_blank" href="https://www.linkedin.com/in/devkayky">LinkedIn</a>
+            <p>Bem-vindo(a) ao meu portfólio!</p>
+            <a class="contatos" target="_blank" href="https://github.com/kaykyls">GitHub</a>
+            <a class="contatos" target="_blank" href="https://www.linkedin.com/in/devkayky">LinkedIn</a>
         </div>
     </main>
     
@@ -71,6 +71,29 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="contato-grid">
+            <div class="contato-info">
+                <div class="contato-info-email">
+                    <img class="email-pic" src="img/email-svgrepo-com.svg" alt="">
+                    <p>Email:<br><a href="mailto:dev.kayky@gmail.com">dev.kayky@gmail.com</a></p>
+                </div>
+                <div class="contato-info-insta">
+                    <img class="insta-pic" src="img/instagram-svgrepo-com.svg" alt="">
+                    <p>Instagram:<br><a href="https://www.instagram.com/dev.kayky/" target="_blank">@dev.kayky</a></p>
+                </div> 
+            </div>
+            <div class="contato-form-div">
+                <form action="" class="contato-form">
+                    <p>Entre em contato.</p>
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="Email">
+                    <input type="textarea" placeholder="Mensagem">
+                </form>
             </div>
         </div>
     </section>
