@@ -377,7 +377,12 @@ img{
     }
 
     .skills-grid h2{
-        justify-content: center;
+        justify-content: left;
+    }
+
+    .skills-items p{
+        text-align: left;
+        margin: .5rem 10vw .5rem 10vw;
     }
 
     .email-pic{
@@ -391,7 +396,7 @@ img{
     .info p {
         font-size: 1.5rem;
         width: 25ch;
-        text-align: center;
+        text-align: left;
     }
 
     .sobre{
@@ -403,7 +408,7 @@ img{
     }
 
     .sobre-grid h2{
-        text-align: center;
+        text-align: left;
         margin: 0px;
     }
 
@@ -428,6 +433,12 @@ img{
     .skills-items-grid{
         margin: 0px 10vw 0px 10vw;
     }
+
+    .skills-text{
+        margin: 0px 10vw 0px 10vw
+    }
+
+    .s
 }
 
 @media (max-width: 500px){
@@ -438,10 +449,27 @@ img{
         margin: 10px 0px 10px 0px;
     }
 
+    .logo{
+        margin: 1rem 3rem 0px 3rem;
+    }
+
+    .logo p{
+        font-size: 2rem;
+    }
+
+    .texts h1{
+        font-size: 3rem;
+    }
+
+    .texts .dev-text{
+        font-size: 1.5rem;
+    }
+
     .info p{
         font-size: 1.5rem;
         width: 18ch;
         line-height: 1.5;
+        text-align: left;
     }
 
     .main-grid{
@@ -452,6 +480,7 @@ img{
     .skills-items-grid{
         margin: 0px 5vw 0px 5vw;
         width: 100px;
+        justify-content: center;
     }
 
     .cert a{
@@ -464,5 +493,26 @@ img{
 
     .navbar ul li a:hover{
         border-bottom: none;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .main-grid{
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .skills-text{
+        margin-left: 1.5rem;
+    }
+
+    .skills-items p{
+        margin-left: 1.5rem;
+    }
+
+    .header p{
+        margin: 5vw 0px 5vw 0px;
     }
 }
