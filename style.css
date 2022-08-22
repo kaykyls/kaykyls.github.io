@@ -372,8 +372,12 @@ img{
         width: 20ch;
     }
 
+    .texts{
+        margin-left: 0px;
+    }
+
     .main{
-        margin: 0px 10vw 0px 10vw;
+        text-align: left;
     }
 
     .skills-grid{
@@ -460,6 +464,13 @@ img{
         margin-bottom: 3rem;
     }
 
+    .main{
+        margin: 0px;
+    }
+
+    .texts h1{
+        width: 10ch;
+    }
 }
 
 @media (max-width: 500px){
@@ -535,5 +546,9 @@ img{
 
     .header p{
         margin: 5vw 0px 5vw 0px;
+    }
+
+    .main{
+        margin: 5vw;
     }
 }
