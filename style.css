@@ -460,17 +460,14 @@ img{
     }
 
     .main-grid{
-        margin-top: 1rem;
-        margin-bottom: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
     }
 
     .main{
         margin: 0px;
     }
 
-    .texts h1{
-        width: 10ch;
-    }
 }
 
 @media (max-width: 500px){
@@ -493,6 +490,10 @@ img{
         font-size: 3rem;
     }
 
+    .texts{
+        width: 15ch;
+    }
+
     .texts .dev-text{
         font-size: 1.5rem;
     }
@@ -502,11 +503,6 @@ img{
         width: 18ch;
         line-height: 1.5;
         text-align: left;
-    }
-
-    .main-grid{
-        margin: 150px 5vw 150px 5vw;
-        width: 25ch;
     }
 
     .skills-items-grid{
@@ -532,8 +528,8 @@ img{
     }
 
     .main-grid{
-        margin-top: 1rem;
-        margin-bottom: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 8rem;
     }
 
     .skills-text{
@@ -548,7 +544,7 @@ img{
         margin: 5vw 0px 5vw 0px;
     }
 
-    .main{
-        margin: 5vw;
+    .logo{
+        margin: 0px 0px 0px 15vw;
     }
 }
