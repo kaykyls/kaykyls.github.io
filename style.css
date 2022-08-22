@@ -372,6 +372,10 @@ img{
         width: 20ch;
     }
 
+    .main{
+        margin: 0px 10vw 0px 10vw;
+    }
+
     .skills-grid{
         display: block;
     }
@@ -438,7 +442,24 @@ img{
         margin: 0px 10vw 0px 10vw
     }
 
-    .s
+    /* .navbar{
+        display: none;
+    } */
+}
+
+@media (max-width: 700px){
+    .contatos{
+        display: block;
+        text-align: center;
+        width: 6rem;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .main-grid{
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+
 }
 
 @media (max-width: 500px){
