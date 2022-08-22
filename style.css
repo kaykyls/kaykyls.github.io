@@ -69,11 +69,14 @@ html{
 
 /* Principal */
 
-.main{
+/* .main{
+ 
+} */
+
+.main-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 150px 15vw 150px 15vw;
-    /* width: 100%; */
 }
 
 .texts{
@@ -184,6 +187,7 @@ img{
     height: 60rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -199,12 +203,11 @@ img{
     grid-row: 1;
 }
 
-.skills-text h3{
+.skills-text{
     font-size: 8rem;
     color: #336699;
     margin: 0px 4rem;
     align-self: center;
-    border-bottom: #153556 solid 4px;
 }
 
 .skills-items{
@@ -330,4 +333,136 @@ img{
 .contato-form p{
     text-align: center;
     font-size: 2rem;
+}
+
+
+/* responsivo */
+
+@media (max-width: 1300px){
+    /* .navbar{
+        display: none;
+    } */
+
+    .sobre-grid h2{
+       font-size: 4rem;
+    }
+
+    .info p {
+        font-size: 1.5rem;
+        width: 20ch;
+    }
+
+    .skills-text{
+        font-size: 4rem;
+    }
+
+    .cert{
+        font-size: 1.5rem;
+    }
+
+    .cert a{
+        width: 7ch;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1100px){
+    .info p {
+        font-size: 1rem;
+        width: 20ch;
+    }
+
+    .skills-grid{
+        display: block;
+    }
+
+    .skills-grid h2{
+        justify-content: center;
+    }
+
+    .email-pic{
+        display: none;
+    }
+
+    .insta-pic{
+        display: none;
+    }
+
+    .info p {
+        font-size: 1.5rem;
+        width: 25ch;
+        text-align: center;
+    }
+
+    .sobre{
+        justify-content: center;
+    }
+
+    .sobre-grid{
+        display: block;
+    }
+
+    .sobre-grid h2{
+        text-align: center;
+        margin: 0px;
+    }
+
+    .picture {
+        display: none;
+    }
+
+    .main-grid{
+        display: block;
+    }
+
+    .contato-grid{
+        display: block;
+        gap: 0px;
+    }
+
+    .contato-info-email{
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .skills-items-grid{
+        margin: 0px 10vw 0px 10vw;
+    }
+}
+
+@media (max-width: 500px){
+    .contatos{
+        display: block;
+        text-align: center;
+        width: 6rem;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .info p{
+        font-size: 1.5rem;
+        width: 18ch;
+        line-height: 1.5;
+    }
+
+    .main-grid{
+        margin: 150px 5vw 150px 5vw;
+        width: 25ch;
+    }
+
+    .skills-items-grid{
+        margin: 0px 5vw 0px 5vw;
+        width: 100px;
+    }
+
+    .cert a{
+        width: 4rem;
+    }
+
+    .cert p{
+        width: 8;
+    }
+
+    .navbar ul li a:hover{
+        border-bottom: none;
+    }
 }
