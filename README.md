@@ -1,2 +1,2 @@
-# my-portfolio
-Meus projetos em HTML, CSS e JavaScript
+# My portfolio
+My projects using HTML, CSS and JavaScript
