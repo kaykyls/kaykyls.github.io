@@ -460,14 +460,17 @@ img{
     }
 
     .main-grid{
-        margin-top: 3rem;
-        margin-bottom: 5rem;
+        margin: 3rem 8vw 8rem 8vw;
     }
 
     .main{
         margin: 0px;
     }
 
+
+    .logo{
+        margin: 1rem 8vw 0px 8vw;
+    }
 }
 
 @media (max-width: 500px){
@@ -528,8 +531,7 @@ img{
     }
 
     .main-grid{
-        margin-top: 3rem;
-        margin-bottom: 8rem;
+        margin: 4rem 8vw 4rem 8vw;
     }
 
     .skills-text{
@@ -544,7 +546,11 @@ img{
         margin: 5vw 0px 5vw 0px;
     }
 
+    .header{
+        background: #eee;
+    }
+
     .logo{
-        margin: 0px 0px 0px 15vw;
+        margin: 0px 8vw 0px 8vw;
     }
 }
