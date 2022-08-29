@@ -19,7 +19,6 @@ body{
     font-family: Montserrat, Arial;
     font-size: 20px;
     margin: 0px;
-    max-width: 100%;
 }
 
 html{
@@ -128,7 +127,6 @@ img{
     display: flex;
     align-items: center;
     box-shadow: 0px 1px 3px #eee;
-    width: 100%;
 }
 
 .sobre-grid{
@@ -284,14 +282,7 @@ img{
     /* padding: 300px 0px 0px 0px; */
 }
 
-.email-pic{
-    height: 50px;
-    padding: 5px;
-    border-radius: 6px;
-    align-self: center;
-}
-
-.insta-pic{
+.email-pic, .insta-pic{
     height: 50px;
     padding: 5px;
     border-radius: 6px;
@@ -302,13 +293,7 @@ img{
     color: #000;
 }
 
-.contato-info-email{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 20px;
-}
-
-.contato-info-insta{
+.contato-info-email, .contato-info-insta{
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 20px;
@@ -318,7 +303,7 @@ img{
     align-items: center;
 }
 
-.contato-form input{
+.contato-form input, #msg{
     display: block;
     margin: 0px auto 10px auto;
     padding: 1rem 2rem;
@@ -326,8 +311,16 @@ img{
     border: #000 solid 3px;
 }
 
-.contato-form input::placeholder{
+#msg{
+    padding: 0px;
+}
+
+.contato-form input::placeholder, #msg::placeholder{
     font-family: Montserrat;
+}
+
+#msg::placeholder{
+    padding: 1rem 0px 0px 2rem;
 }
 
 .contato-form p{
@@ -335,6 +328,18 @@ img{
     font-size: 2rem;
 }
 
+.botao{
+   border: solid 3px black;
+   border-radius: 6px;
+   /* height: 3rem; */
+   margin-left: 1.5rem;
+   display: flex;
+}
+
+.botao p{
+    margin: 0px;
+    font-size: 1.5rem;
+}
 
 /* responsivo */
 
@@ -407,17 +412,13 @@ img{
         text-align: left;
     }
 
-    .sobre{
-        justify-content: center;
-    }
-
-    .sobre-grid{
-        display: block;
-    }
-
     .sobre-grid h2{
         text-align: left;
         margin: 0px;
+    }
+
+    .sobre{
+        justify-content: flex-start;
     }
 
     .picture {
@@ -449,6 +450,11 @@ img{
     /* .navbar{
         display: none;
     } */
+
+    .sobre-grid{
+        margin: 0px 15vw 0px 15vw;
+        display: block;
+    }
 }
 
 @media (max-width: 700px){
@@ -467,9 +473,18 @@ img{
         margin: 0px;
     }
 
-
     .logo{
         margin: 1rem 8vw 0px 8vw;
+    }
+
+    .sobre{
+        justify-content: flex-start;
+        align-content: center;
+        /* display: flex; */
+    }
+
+    .sobre-grid{
+        margin: 0px 8vw 0px 8vw;
     }
 }
 
@@ -553,4 +568,8 @@ img{
     .logo{
         margin: 0px 8vw 0px 8vw;
     }
+
+    .botao{
+        margin-left: 4px;
+     }
 }
