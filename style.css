@@ -1,24 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-/*
-Darkmode  e roxo
+/* @media (prefers-color-scheme: light){
+    :root{
+        --background-principal: #fff;
+        --background-secundario: #eee;
+        --cor-principal: #336699;
+        --cor-principal-escura: #153556;
+        --cor-secundaria: #86BBD8;
+        --texto: #000;
+    }
+} */
 
-body{
-    font-family: Montserrat, Arial;
-    font-size: 20px;
-    margin: 0px;
-    background: #121212;
-    color: #fff;
+/* @media (prefers-color-scheme: dark){
+    :root{
+        --background-principal: #141414;
+        --background-secundario:  #121212;
+        --cor-principal: #673ab7;
+        --cor-principal-escura: #4b2c81;
+        --cor-secundaria: #84e;
+        --texto: #fff;
+    }
+} */
+
+:root{
+    --background-principal: #fff;
+    --background-secundario: #eee;
+    --cor-principal: #336699;
+    --cor-principal-escura: #153556;
+    --cor-secundaria: #86BBD8;
+    --texto: #000;
 }
 
-#673ab7
-
-*/
-
 body{
     font-family: Montserrat, Arial;
     font-size: 20px;
     margin: 0px;
+    background: var(--background-principal);
+    color: var(--texto);
 }
 
 html{
@@ -57,12 +75,12 @@ html{
 
 .navbar ul li a{
     text-decoration: none;
-    color: #000;
+    color: var(--texto);
     padding: 10px 20px;
 }
 
 .navbar ul li a:hover{
-    border-bottom: #336699 4px solid;
+    border-bottom: 4px solid var(--cor-principal);
     transition: 0.1s;
 }
 
@@ -93,20 +111,20 @@ html{
 }
 
 #kayky{
-    color: #86BBD8;
+    color: var(--cor-secundaria);
 }
 
 .contatos{
-    background: #336699;
+    background: var(--cor-principal);
     padding: 1rem 2rem;
     border-radius: 6px;
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: var(--background-principal);
 }
 
 .contatos:hover{
-    background: #153556;
+    background: var(--cor-principal-escura);
     transition: 0.3s;
 }
 
@@ -122,11 +140,11 @@ img{
 /* Sobre */
 
 .sobre{
-    background: #eee;
+    background: var(--background-secundario);
     height: 60rem;
     display: flex;
     align-items: center;
-    box-shadow: 0px 1px 3px #eee;
+    box-shadow: 0px 1px 3px var(--background-secundario);
 }
 
 .sobre-grid{
@@ -140,7 +158,7 @@ img{
     margin: 0px 4rem;
     text-align: right;
     font-size: 8rem;
-    color: #86BBD8;
+    color: var(--cor-secundaria);
     text-transform: uppercase;
     align-self: center;
 }
@@ -159,7 +177,7 @@ img{
 }
 
 .cert a{
-    background: #336699;
+    background: var(--cor-principal);
     padding: 1rem 2rem;
     grid-column: 2;
     align-self: start;
@@ -171,7 +189,7 @@ img{
 }
 
 .cert a:hover{
-    background: #153556;
+    background: var(--cor-principal-escura);
     transition: 0.3s;
 }
 
@@ -203,7 +221,7 @@ img{
 
 .skills-text{
     font-size: 8rem;
-    color: #336699;
+    color: var(--cor-principal);
     margin: 0px 4rem;
     align-self: center;
 }
@@ -224,12 +242,11 @@ img{
     margin: 1.5rem 0px
 }
 
-
 .skills-items-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0px 8rem;
-    background:#eee;
+    background: var(--background-secundario);
     padding: 1rem 6rem;
     border-radius: 6px;
 }
@@ -240,7 +257,7 @@ img{
 }
 
 .skills-items-grid li{
-    background: #fff;
+    background: var(--background-principal);
     padding: 4px;
     border-radius: 6px;
 }
@@ -266,7 +283,7 @@ img{
 
 .contato{
     height: 60rem;
-    background: #eee;
+    background: var(--background-secundario);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -290,7 +307,7 @@ img{
 }
 
 .contato-info p a{
-    color: #000;
+    color: var(--texto);
 }
 
 .contato-info-email, .contato-info-insta{
@@ -562,7 +579,7 @@ img{
     }
 
     .header{
-        background: #eee;
+        background: var(--background-secundario);
     }
 
     .logo{
