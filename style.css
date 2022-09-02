@@ -43,28 +43,27 @@ html{
     scroll-behavior: smooth;
 }
 
+ul{
+    padding: 0px;
+}
 
 /* Logo e Navegação */
 
-.header{
+.nav-container{
     display: flex;
-    width: 100%;
     justify-content: space-between;
-}
-
-.logo{
-    margin-left: 15vw;
-}
-
-.logo p{
-    font-size: 3rem;
-    font-weight: bold;
+    margin: 0px 15vw 0px 15vw;
 }
 
 .navbar{
-    margin-right: 15vw;
     display: flex;
     align-items: center;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .navbar ul li{
@@ -449,6 +448,7 @@ img{
     .contato-grid{
         display: block;
         gap: 0px;
+        margin: 0px 15vw 0px 15vw;
     }
 
     .contato-info-email{
@@ -464,9 +464,20 @@ img{
         margin: 0px 10vw 0px 10vw
     }
 
-    /* .navbar{
-        display: none;
-    } */
+    .skills-items-grid, .skills-text, .skills-items p{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+    .skills{
+        justify-content: flex-start;
+        align-content: center;
+    }
+
+    .contato{
+        justify-content: flex-start;
+        align-content: center;
+    }
 
     .sobre-grid{
         margin: 0px 15vw 0px 15vw;
@@ -475,6 +486,10 @@ img{
 }
 
 @media (max-width: 700px){
+    .nav-container{
+        margin: 0px 8vw 0px 8vw;
+    }
+
     .contatos{
         display: block;
         text-align: center;
@@ -490,10 +505,6 @@ img{
         margin: 0px;
     }
 
-    .logo{
-        margin: 1rem 8vw 0px 8vw;
-    }
-
     .sobre{
         justify-content: flex-start;
         align-content: center;
@@ -502,6 +513,33 @@ img{
 
     .sobre-grid{
         margin: 0px 8vw 0px 8vw;
+    }
+
+    .skills{
+        justify-content: flex-start;
+        align-content: center;
+    }
+
+    .skills-grid{
+        margin: 0px 8vw 0px 8vw;
+    }
+
+    .skills-items-grid, .skills-text, .skills-items p{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+    .skills-items-grid{
+        margin: 0px 6px;
+    }
+
+    .contato-grid{
+        margin: 0px 8vw 0px 8vw;
+    }
+
+    .contato{
+        justify-content: center;
+        align-content: center;
     }
 }
 
@@ -514,10 +552,6 @@ img{
     }
 
     .logo{
-        margin: 1rem 3rem 0px 3rem;
-    }
-
-    .logo p{
         font-size: 2rem;
     }
 
@@ -541,7 +575,7 @@ img{
     }
 
     .skills-items-grid{
-        margin: 0px 5vw 0px 5vw;
+        /* margin: 0px 5vw 0px 5vw; */
         width: 100px;
         justify-content: center;
     }
@@ -564,14 +598,6 @@ img{
 
     .main-grid{
         margin: 4rem 8vw 4rem 8vw;
-    }
-
-    .skills-text{
-        margin-left: 1.5rem;
-    }
-
-    .skills-items p{
-        margin-left: 1.5rem;
     }
 
     .header p{
