@@ -23,12 +23,12 @@
 } */
 
 :root{
-    --background-principal: #141414;
-    --background-secundario:  #121212;
+    --background-principal: #fff;
+    --background-secundario: #eee;
     --cor-principal: #336699;
     --cor-principal-escura: #153556;
     --cor-secundaria: #86BBD8;
-    --texto: #fff;
+    --texto: #000;
 }
 
 body{
