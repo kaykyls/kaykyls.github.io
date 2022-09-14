@@ -405,7 +405,7 @@ img{
         top: 0px;
         right: 0px;
         left: 0px;
-        height: 100px;
+        height: 120px;
         display: flex;
     }
 
@@ -438,8 +438,9 @@ img{
     .nav-menu{
         display: flex;
         position: fixed;
-        right: -100%;
-        top: 100px;
+        z-index: -1;
+        left: 0px;
+        top: -100%;
         gap: 0;
         flex-direction: column;
         background: var(--background-secundario);
@@ -454,7 +455,7 @@ img{
     }
     
     .nav-menu-ativo{
-        right: 0;
+        top: 100px;
     }
     
     .main, .sobre, .skills, .contato{
@@ -557,10 +558,6 @@ img{
 
     .navbar ul li a:hover{
         border-bottom: none;
-    }
-    
-    .nav-menu{
-        top: 60px;
     }
 
     .logo{
