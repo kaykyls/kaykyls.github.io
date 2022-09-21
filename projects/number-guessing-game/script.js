@@ -8,6 +8,8 @@ function mouseClick(event){
         document.querySelector(".screen-1").classList.add("hide")
         document.querySelector(".screen-2").classList.remove("hide")
         document.querySelector(".screen-2-container p").innerText = (`Acertou em ${attempts} tentativas!`)
+    }else if(number < 0 || number >10){
+        document.querySelector(".main-texts p").innerText = "O número está entre 0 e 10! Tente novamente"
     }else{
         document.querySelector(".main-texts p").innerText = "Errou! Tente novamente"
     }
