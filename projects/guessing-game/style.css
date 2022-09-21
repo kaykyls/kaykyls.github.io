@@ -1,0 +1,111 @@
+:root{
+    --roxo: #7879F1;
+    --roxo-escuro: #6262d1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+body{
+    background: linear-gradient(#C2E9FB, #A1C4FD);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 510px;
+    height: 330px
+}
+
+.main-container{
+    margin: 80px 60px;
+    justify-content: center;
+}
+
+.main-texts{
+    text-align: center;
+}
+
+.main-texts h1{
+    font-size: 2.4rem;
+}
+
+.main-texts p {
+    color: #474747;
+}
+
+.main-texts h1, p{
+    margin-bottom: 20px;
+}
+
+.try-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+input, button{
+    border: none;
+    font-size: 20px;
+}
+
+.try-input{
+    background: #eee;
+    width: 70px;
+    border-radius: 6px 0px 0px 6px;
+    text-align: center;
+}
+
+.try-btn, .play-again-btn{
+    background: var(--roxo);
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 0px 6px 6px 0px;
+}
+
+.try-btn:hover{
+    background: var(--roxo-escuro);
+    transition: 0.3s;
+}
+
+.hide{
+    display: none;
+}
+
+.screen-2-container{
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.screen-2 p{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.play-again-btn{
+    border-radius: 6px;
+    display: inline-block;
+    align-self: center;
+    width: 14rem;
+    height: 4rem;
+}
+
+@media (max-width: 520px){
+    .main-bg{
+        width: 90vw;
+        height: 330px
+    }
+}
