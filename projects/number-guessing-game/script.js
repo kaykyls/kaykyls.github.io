@@ -14,6 +14,7 @@ function mouseClick(event){
         document.querySelector(".main-texts p").innerText = "Errou! Tente novamente"
     }
     attempts++
+    document.querySelector(".try-input").value = ""
 }
 
 const playAgainBtn = document.querySelector(".play-again-btn")
