@@ -1,0 +1,36 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main-bg">
+        <div class="main-container">
+            <h1>Calculadora de IMC</h1>
+            <form class="form">
+                <label for="weight">Peso (kg)</label>
+                <input id="weight" class="form-weight" type="number">
+                <label for="height">Altura (cm)</label>
+                <input id="height" class="form-height" type="number">
+                <button class="form-btn">Calcular</button>
+            </form>
+        </div>
+    </main>
+    <div class="popup hide">
+        <div class="popup-bg">
+            <h1>Seu IMC é de: </h1>
+            <button class="close-btn">
+                <img src="/img/close.svg" alt="">
+            </button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body{
+    background: #040924;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-bg{
+    background: #fff;
+    height: 400px;
+    width: 400px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.main-container{
+    text-align: center;
+    padding: 50px;
+    gap: 20px;
+    height: 100%;
+}
+
+.main-container h1{
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.form-weight, .form-height{
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 12px 0px;
+    border-radius: 6px;
+    border: 1px solid #cfd4da;
+    width: 100%;
+}
+
+.form label{
+    margin-bottom: 6px;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.form input{
+    background: #DCE2E9;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.form-btn{
+    padding: 12px 30px;
+    background: #a430ec;
+    border: 1px solid #9e20ec;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.form-btn:hover{
+    background: #892bc3;
+    transition: 0.3s;
+}
+
+.popup{
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+.popup-bg{
+    position: relative;
+    background: #fff;
+    height: 120px;
+    width: 320px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: #000 1px 2px 4px; */
+}
+
+.close-btn{
+    border: none;
+    background: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 410px) {
+    .main-bg{
+        margin: 0 10vw;
+    }
+
+    .main-container{
+        padding: 30px;
+    }
+
+    .main-container h1{
+        font-size: 1.7rem;
+    }
+}
