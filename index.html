@@ -7,6 +7,10 @@
     <title>Kayky's Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/laptop-pc-computer-svgrepo-com.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
@@ -18,8 +22,13 @@
                     <li><a class="nav-menu-link" href="/">Home</a></li>
                     <li><a class="nav-menu-link" href="#sobre">Sobre</a></li>
                     <li><a class="nav-menu-link" href="#skills">Skills</a></li>
-                    <!-- <li><class="nav-menu-link" a href="#projetos">Projetos</class=></li> -->
+                    <li><a class="nav-menu-link" href="#projetos">Projetos</a></li>
                     <li><a class="nav-menu-link" href="#contato">Contato</a></li>
+                    <label class="theme-btn" for="checkbox">
+                        <span class="hidden"><i class="fa fa-moon-o" style="font-size:18px"></i></span>
+                        <span><i class="fa fa-sun-o" style="font-size:18px"></i></span>
+                    </label>
+                    <input id="checkbox" type="checkbox">
                 </ul>
                 <div class="hamburger-menu">
                     <span class="barra"></span>
@@ -39,8 +48,8 @@
                 <h1>Olá, me chamo <span id="kayky">Kayky</span></h1>
                 <p class="dev-text">Desenvolvedor front-end</p>
                 <p>Bem-vindo(a) ao meu portfólio!</p>
-                <a class="contatos" target="_blank" href="https://github.com/kaykyls">GitHub</a>
-                <a class="contatos" target="_blank" href="https://www.linkedin.com/in/devkayky">LinkedIn</a>
+                <a class="button" target="_blank" href="https://github.com/kaykyls">GitHub</a>
+                <a class="button" target="_blank" href="https://www.linkedin.com/in/devkayky">LinkedIn</a>
             </div>
         </div>
     </main>
@@ -52,7 +61,7 @@
                 <p>Tenho 18 anos, curso <strong>Sistemas de Informação</strong> no IFBA, onde me aprofundei nos conhecimentos de <strong>lógica de programação</strong> com a <strong>linguagem C</strong>. Atualmente estou aprendendo <strong>Desenvolvimento Web</strong>. Tenho conhecimentos de <strong>nível C1 (avançado)</strong>  em <strong>língua inglesa</strong>.</p>
             </div>
             <div class="cert">
-                <a target="_blank" href="http://www.efset.org/cert/5XXGPv">EF Set</a>
+                <a class="button" target="_blank" href="http://www.efset.org/cert/5XXGPv">EF Set</a>
                 <p>Certificado de inglês</p>
             </div>
         </div>
@@ -81,6 +90,52 @@
         </div>
     </section>
 
+    <section class="projetos" id="projetos">
+        <div class="projetos-container">
+            <h2>Meus projetos:</h2>
+            <div class="projetos-grid">
+                <div class="projeto">
+                    <div class="projeto-display">
+                        <h3>Jogo da velha</h3>
+                        <img src="./img/Screenshot_2.png" alt="">
+                    </div>
+                    <div class="projeto-info">
+                        <p><strong>Feito com:</strong> Html, CSS e JavaScript</p>
+                        <p>Um jogo da velha utiliza de um algoritmo verificação de combinações</p>
+                        <a class="button" href="">Repositorio</a>
+                        <a class="button" href="">Live Preview</a>
+                    </div>
+                </div>
+
+                <div class="projeto">
+                    <div class="projeto-display">
+                        <h3>Calculadora de IMC</h3>
+                        <img src="./img/Screenshot_1.png" alt="">
+                    </div>
+                    <div class="projeto-info">
+                        <p><strong>Feito com:</strong> Html, CSS e JavaScript</p>
+                        <p>Uma aplicação capaz de calcular IMC e indicar o seu nível</p>
+                        <a class="button" href="">Repositorio</a>
+                        <a class="button" href="">Live Preview</a>
+                    </div>
+                </div>
+
+                <div class="projeto">
+                    <div class="projeto-display">
+                        <h3>Jogo da advinhação</h3>
+                        <img src="./img/Screenshot_3.png" alt="">
+                    </div>
+                    <div class="projeto-info">
+                        <p><strong>Feito com:</strong> Html, CSS e JavaScript</p>
+                        <p>Um simples jogo de advinhação que utiliza de um algoritmo de geração de números aleatórios</p>
+                        <a class="button" href="">Repositorio</a>
+                        <a class="button" href="">Live Preview</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="contato" id="contato">
         <div class="contato-grid">
             <div class="contato-info">
@@ -96,10 +151,13 @@
             <div class="contato-form-div">
                 <form action="" class="contato-form">
                     <p>Entre em contato.</p>
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="Email">
+                    <label for="name">Nome:</label>
+                    <input id="name" type="text" placeholder="Nome">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" placeholder="Email">
+                    <label for="msg">Mensagem:</label>
                     <textarea name="" id="msg" cols="30" rows="10" placeholder="Mensagem">Este formulário não vai para canto algum</textarea>
-                    <button class="botao"><p>Enviar</p></button>
+                    <button class="button"><p>Enviar</p></button>
                 </form>
             </div>
         </div>
