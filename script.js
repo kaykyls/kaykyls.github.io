@@ -4,8 +4,6 @@ const themeBtn = document.querySelector(".theme-btn")
 const html = document.querySelector("html")
 const themeButtons = document.querySelectorAll(".theme-btn span")
 
-console.log(themeButtons)
-
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("hamburger-menu-ativo")
     navMenu.classList.toggle("nav-menu-ativo")
@@ -17,7 +15,8 @@ document.querySelectorAll(".nav-menu-link").forEach(n => n.addEventListener("cli
 }))
 
 themeBtn.addEventListener("click", () => {
-    html.classList.toggle("lightmode")
+    html.classList.toggle("light-mode")
+    html.classList.toggle("dark-mode")
     themeButtons.forEach((button) => {
         button.classList.toggle("hidden")
     })
