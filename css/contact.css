@@ -1,0 +1,77 @@
+.contato{
+    height: 60rem;
+    background: var(--background-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contato-grid{
+    margin: 0rem 20vw 0rem 20vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 6rem;
+}
+
+.email-pic, .insta-pic{
+    height: 50px;
+    padding: 5px;
+    border-radius: 6px;
+    align-self: center;
+}
+
+.contato-info p a{
+    color: var(--texto);
+}
+
+.contato-info-email, .contato-info-insta{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
+.contato-form-div{
+    align-items: center;
+}
+
+.contato-form input, #msg{
+    display: block;
+    margin: 0px auto 10px auto;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    border: #000 solid 3px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#msg{
+    padding: 0px;
+}
+
+.contato-form input::placeholder, #msg::placeholder{
+    font-family: Montserrat;
+}
+
+#msg::placeholder{
+    padding: 1rem 0px 0px 2rem;
+}
+
+.contato-form p{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contato-form .button {
+    /* margin-left: 1.5rem; */
+    /* display: flex; */
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contato-form .button p {
+    margin: 0px;
+    font-size: 1.5rem;
+}

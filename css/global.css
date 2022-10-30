@@ -1,0 +1,34 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Montserrat, Arial;
+    font-size: 20px;
+    margin: 0px;
+    transition: .1s;
+    background: var(--background-principal);
+    color: var(--texto);
+}
+
+.light-mode {
+    --background-principal: #fff;
+    --background-secundario: #eee;
+    --cor-principal: #336699;
+    --cor-principal-escura: #153556;
+    --cor-secundaria: #86BBD8;
+    --texto: #000;
+}
+
+.dark-mode {
+    --background-principal: #141414;
+    --background-secundario:  #121212;
+    --cor-principal: #336699;
+    --cor-principal-escura: #153556;
+    --cor-secundaria: #86BBD8;
+    --texto: #fff;
+}
+
+ul{
+    padding: 0px;
+}
