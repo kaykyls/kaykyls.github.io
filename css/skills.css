@@ -1,15 +1,16 @@
 .skills{
-    height: 60rem;
+    /* height: 60rem; */
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .skills-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0px 15vw;
+    /* margin: 0px 15vw; */
+    /* padding: 150px 5vw 150px 5vw; */
 }
 
 .skills-text{
@@ -44,9 +45,10 @@
 .skills-items-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0px 8rem;
+    margin: 0 auto;
     background: var(--background-secundario);
-    padding: 1rem 6rem;
+    padding: 2rem 2rem;
+    width: 24rem;
     border-radius: 6px;
 }
 

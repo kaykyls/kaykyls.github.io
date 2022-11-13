@@ -5,7 +5,7 @@
 .main-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 150px 15vw 150px 15vw;
+    /* padding: 150px 15vw 150px 15vw; */
 }
 
 .main-grid-texts{

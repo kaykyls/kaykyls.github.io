@@ -1,18 +1,19 @@
 .contato{
-    height: 60rem;
+    /* height: 60rem; */
     background: var(--background-principal);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .contato-grid{
-    margin: 0rem 20vw 0rem 20vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* margin: 0rem 20vw 0rem 20vw; */
+    display: flex;
+    /* flex: 1; */
+    /* grid-template-columns: 1fr 1fr; */
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     gap: 6rem;
 }
 

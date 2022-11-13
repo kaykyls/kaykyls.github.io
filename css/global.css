@@ -32,3 +32,12 @@ body{
 ul{
     padding: 0px;
 }
+
+.grid {
+    padding: 9.5rem 7vw 9.5rem 7vw;
+    flex: 1;
+}
+
+@media (max-width: 1000px) {
+
+}

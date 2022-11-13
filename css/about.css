@@ -1,6 +1,6 @@
 .sobre{
     background: var(--background-secundario);
-    height: 60rem;
+    /* height: 60rem; */
     display: flex;
     align-items: center;
     box-shadow: 0px 1px 3px var(--background-secundario);
@@ -9,8 +9,7 @@
 .sobre-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0px 15vw;
-    
+    /* padding: 9.5rem 10vw 9.5rem 10vw; */
 }
 
 .sobre-grid h2{

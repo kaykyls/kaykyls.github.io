@@ -5,7 +5,7 @@
 .nav-container{
     display: flex;
     justify-content: space-between;
-    margin: 0px 15vw 0px 15vw;
+    padding: 0px 7vw 0px 7vw;
 }
 
 .navbar{

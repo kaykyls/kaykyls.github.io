@@ -1,12 +1,12 @@
 .projetos{
-    height: 60rem;
+    /* height: 60rem; */
     background: var(--background-secundario);
     display: flex;
     flex-direction: column;
 }
 
 .projetos-container {
-    margin: 2rem 15vw;
+    /* padding: 150px 15vw 150px 15vw; */
 }
 
 .projetos-container h2 {
