@@ -67,19 +67,20 @@ onscroll = e => {
     if(window.scrollY > 174 && window.scrollY > previousScroll) {
         previousScroll = window.scrollY
         header.style.top = "-100px"
-
         backToTop.style.bottom = "-100px"
     }
     
     else if (window.scrollY < previousScroll) {
         if(window.scrollY <= 100) {
             header.classList.remove("hasBackground")
+            backToTop.style.bottom = "-100px"
         } else {
             header.classList.add("hasBackground")
+            backToTop.style.bottom = "2rem"
         }
 
         previousScroll = window.scrollY
-        backToTop.style.bottom = "2rem"
+        
         header.style.top = "0px"
         
     }
