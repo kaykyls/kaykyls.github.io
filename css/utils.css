@@ -1,0 +1,43 @@
+.button {
+    background: linear-gradient(var(--cor-principal) 70%, var(--cor-principal-escura)) ;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    max-width: max-content;
+}
+
+.button:hover{
+    background: var(--cor-principal-escura);
+    transition: 0.3s;
+}
+
+.grid {
+    padding: 9.5rem 7vw 9.5rem 7vw;
+    flex: 1;
+}
+
+@media (max-width: 1100px){
+    .grid{
+        display: block;
+    }
+}
+
+@media (max-width: 700px){
+    .button {
+        display: block;
+        text-align: center;
+        width: 8rem;
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+@media (max-width: 500px){
+    .button {
+        display: block;
+        text-align: center;
+        width: 6rem;
+        margin: 10px 0px 10px 0px;
+    }
+}

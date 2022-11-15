@@ -39,14 +39,14 @@
         </div>
     </header>
 
-    <main class="main" id="#home">
-        <div class="main-grid grid">
+    <main class="main-bg" id="#home">
+        <div class="main-container grid">
             <div class="picture">
                 <img src="./img/desk-svgrepo-com (1).svg" alt="">
             </div>
             <div class="main-grid-texts">
                 <h1>Olá, me chamo <span id="kayky">Kayky</span></h1>
-                <p class="dev-text">Desenvolvedor front-end</p>
+                <p>Desenvolvedor front-end</p>
                 <p>Bem-vindo(a) ao meu portfólio!</p>
                 <a class="button" target="_blank" href="https://github.com/kaykyls">GitHub</a>
                 <a class="button" target="_blank" href="https://www.linkedin.com/in/devkayky">LinkedIn</a>
@@ -54,8 +54,8 @@
         </div>
     </main>
     
-    <section id="sobre" class="sobre">
-        <div class="sobre-grid grid">
+    <section id="sobre" class="sobre-bg">
+        <div class="sobre-container grid">
             <h2>Sobre<br>mim</h2>
             <div class="info">
                 <p>Tenho 18 anos, curso <strong>Sistemas de Informação</strong> no IFBA, onde me aprofundei nos conhecimentos de <strong>lógica de programação</strong> com a <strong>linguagem C</strong>. Atualmente estou aprendendo <strong>Desenvolvimento Web</strong>. Tenho conhecimentos de <strong>nível C1 (avançado)</strong>  em <strong>língua inglesa</strong>.</p>
@@ -67,8 +67,8 @@
         </div>
     </section>
     
-    <section id="skills" class="skills">
-        <div class="skills-grid grid">
+    <section id="skills" class="skills-bg">
+        <div class="skills-container grid">
             <h2 class="skills-text">SKILLS</h2>
             <div class="skills-items">
                 <p>Front-end</p>
@@ -90,37 +90,72 @@
         </div>
     </section>
 
-    <section class="projetos" id="projetos">
-        <div class="projetos-container grid">
+    <section class="projetos-bg" id="projetos">
             <h2>PROJETOS</h2>
-            <div class="projetos-grid">
-                <div class="projeto">
-                    <div class="projeto-display">
-                        <h3>Jogo da velha</h3>
-                        <a href="https://kaykyls.github.io/tic-tac-toe/" target="_blank"><img src="./img/Screenshot_2.png" alt=""></a>
+            <ul class="projetos-container">
+                <li class="projeto-bg">
+                    <div class="projeto-container">
+                        <div class="projeto-display">
+                            <h3>Jogo da velha</h3>
+                            <a href="https://kaykyls.github.io/tic-tac-toe/" target="_blank"><img src="./img/Screenshot_2.png" alt=""></a>
+                        </div>
+                        <div class="projeto-info">
+                            <p><strong>Feito com:</strong> Html, CSS e JavaScript</p>
+                            <p>Um jogo da velha que utiliza de um algoritmo verificação de combinações</p>
+                            <a class="button" href="https://github.com/kaykyls/tic-tac-toe" target="_blank">Repositório</a>
+                            <a class="button" href="https://kaykyls.github.io/tic-tac-toe/" target="_blank">Live Preview</a>
+                        </div>
                     </div>
-                    <div class="projeto-info">
-                        <p><strong>Feito com:</strong> Html, CSS e JavaScript</p>
-                        <p>Um jogo da velha utiliza de um algoritmo verificação de combinações</p>
-                        <a class="button" href="https://github.com/kaykyls/tic-tac-toe" target="_blank">Repositório</a>
-                        <a class="button" href="https://kaykyls.github.io/tic-tac-toe/" target="_blank">Live Preview</a>
-                    </div>
-                </div>
+                </li>
 
-                <div class="projeto">
-                    <div class="projeto-display">
-                        <h3>Calculadora de IMC</h3>
-                        <a href="https://kaykyls.github.io/bmi-calculator/" target="_blank"><img src="./img/Screenshot_1.png" alt=""></a>
+                <li class="projeto-bg">
+                    <div class="projeto-container">
+                        <div class="projeto-display">
+                            <h3>Calculadora de IMC</h3>
+                            <a href="https://kaykyls.github.io/bmi-calculator/" target="_blank"><img src="./img/Screenshot_1.png" alt=""></a>
+                        </div>
+                        <div class="projeto-info">
+                            <p><strong>Feito com:</strong> Html, CSS e JavaScript</p>
+                            <p>Uma aplicação capaz de calcular IMC e indicar o seu nível</p>
+                            <a class="button" href="https://github.com/kaykyls/bmi-calculator" target="_blank">Repositório</a>
+                            <a class="button" href="https://kaykyls.github.io/bmi-calculator/" target="_blank">Live Preview</a>
+                        </div>
                     </div>
-                    <div class="projeto-info">
-                        <p><strong>Feito com:</strong> Html, CSS e JavaScript</p>
-                        <p>Uma aplicação capaz de calcular IMC e indicar o seu nível</p>
-                        <a class="button" href="https://github.com/kaykyls/bmi-calculator" target="_blank">Repositório</a>
-                        <a class="button" href="https://kaykyls.github.io/bmi-calculator/" target="_blank">Live Preview</a>
-                    </div>
-                </div>
+                </li>
 
-                <div class="projeto">
+                <li class="projeto-bg">
+                    <div class="projeto-container">
+                        <div class="projeto-display">
+                            <h3>Jogo da advinhação</h3>
+                            <a href="https://kaykyls.github.io/number-guessing-game/" target="_blank"><img src="./img/Screenshot_3.png" alt=""></a>
+                        </div>
+                        <div class="projeto-info">
+                            <p><strong>Feito com:</strong> Html, CSS e JavaScript</p>
+                            <p>Um simples jogo de advinhação que utiliza de um algoritmo de geração de números aleatórios</p>
+                            <a class="button" href="https://github.com/kaykyls/number-guessing-game" target="_blank">Repositório</a>
+                            <a class="button" href="https://kaykyls.github.io/number-guessing-game/" target="_blank">Live Preview</a>
+                        </div> 
+                    </div>     
+                </li>
+
+                <li class="projeto-bg">
+                    <div class="projeto-container">
+                        <div class="projeto-display">
+                            <h3>Jogo da advinhação</h3>
+                            <a href="https://kaykyls.github.io/number-guessing-game/" target="_blank"><img src="./img/Screenshot_3.png" alt=""></a>
+                        </div>
+                        <div class="projeto-info">
+                            <p><strong>Feito com:</strong> Html, CSS e JavaScript</p>
+                            <p>Um simples jogo de advinhação que utiliza de um algoritmo de geração de números aleatórios</p>
+                            <a class="button" href="https://github.com/kaykyls/number-guessing-game" target="_blank">Repositório</a>
+                            <a class="button" href="https://kaykyls.github.io/number-guessing-game/" target="_blank">Live Preview</a>
+                        </div> 
+                    </div>     
+                </li>
+ <!--
+
+
+                <li class="projeto">
                     <div class="projeto-display">
                         <h3>Jogo da advinhação</h3>
                         <a href="https://kaykyls.github.io/number-guessing-game/" target="_blank"><img src="./img/Screenshot_3.png" alt=""></a>
@@ -128,18 +163,16 @@
                     <div class="projeto-info">
                         <p><strong>Feito com:</strong> Html, CSS e JavaScript</p>
                         <p>Um simples jogo de advinhação que utiliza de um algoritmo de geração de números aleatórios</p>
-                        <div class="projeto-buttons">
-                            <a class="button" href="https://github.com/kaykyls/number-guessing-game" target="_blank">Repositório</a>
-                            <a class="button" href="https://kaykyls.github.io/number-guessing-game/" target="_blank">Live Preview</a>
-                        </div>            
+                        <a class="button" href="https://github.com/kaykyls/number-guessing-game" target="_blank">Repositório</a>
+                        <a class="button" href="https://kaykyls.github.io/number-guessing-game/" target="_blank">Live Preview</a>
                     </div>      
-                </div>
-            </div>
+                </li> -->
+            </ul>
         </div>
     </section>
 
-    <section class="contato" id="contato">
-        <div class="contato-grid grid">
+    <section class="contato-bg" id="contato">
+        <div class="contato-container grid">
             <div class="contato-info">
                 <div class="contato-info-email">
                     <img class="email-pic" src="./img/email-svgrepo-com.svg" alt="">

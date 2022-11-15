@@ -1,17 +1,12 @@
-.contato{
-    /* height: 60rem; */
+.contato-bg{
     background: var(--background-principal);
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 100%; */
 }
 
-.contato-grid{
-    /* margin: 0rem 20vw 0rem 20vw; */
+.contato-container{
     display: flex;
-    /* flex: 1; */
-    /* grid-template-columns: 1fr 1fr; */
     align-items: center;
     justify-content: center;
     gap: 6rem;
@@ -66,8 +61,6 @@
 }
 
 .contato-form .button {
-    /* margin-left: 1.5rem; */
-    /* display: flex; */
     width: 100%;
     margin-top: 1rem;
 }
@@ -75,4 +68,25 @@
 .contato-form .button p {
     margin: 0px;
     font-size: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+    .email-pic, .insta-pic, .picture{
+        display: none;
+    }
+
+    .contato-info-email{
+        justify-content: center;
+    }
+
+    .contato-form {
+       max-width: 300px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contato-bg{
+        justify-content: center;
+        align-content: center;
+    }
 }

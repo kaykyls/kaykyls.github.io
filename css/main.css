@@ -2,14 +2,22 @@
     display: flex;
 }
 
-.main-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* padding: 150px 15vw 150px 15vw; */
+.main-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .main-grid-texts{
-    margin-left: 2rem;
+    width: 40ch;
+}
+
+.main-grid-texts p{
+    margin-bottom: .4rem;
+}
+
+.main-grid-texts p:nth-child(2){
+    font-size: 2rem;
 }
 
 .main-grid-texts h1{
@@ -26,20 +34,6 @@
     color: var(--cor-secundaria);
 }
 
-.button {
-    background: var(--cor-principal);
-    padding: 1rem 2rem;
-    border-radius: 6px;
-    display: inline-block;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.button:hover{
-    background: var(--cor-principal-escura);
-    transition: 0.3s;
-}
-
 img{
     max-width: 100%;
     max-height: 100%;
@@ -47,4 +41,30 @@ img{
 
 .picture img{
     width: 500px;
+}
+
+@media(max-width: 1100px) {
+    .main-grid.grid {
+        padding: 12rem 7vw 8rem 7vw;
+    }
+    
+    .main, .sobre, .skills, .contato{
+        justify-content: flex-start;
+        align-content: center;
+    }
+    
+    .main-grid-texts{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-grid-texts h1{
+        font-size: 3rem;
+    }
+
+    .main-grid-texts, .dev-text{
+        width: 15ch;
+        font-size: 1.5rem;
+    }
 }
