@@ -27,6 +27,11 @@
     margin: 0px;
 }
 
+.main-grid-texts {
+    display: flex;
+    align-items: center;
+}
+
 #kayky{
     color: var(--cor-secundaria);
 }

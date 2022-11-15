@@ -40,3 +40,18 @@ body{
 ul{
     padding: 0px;
 }
+
+.back-to-top {
+    background: #343434db;
+    color: var(--texto);
+    border-radius: 1rem;
+    cursor: pointer;
+    position: fixed;
+    bottom: -100px;
+    right: 2rem;
+    transition: .3s;
+}
+
+.back-to-top span {
+    font-size: 4rem;
+}

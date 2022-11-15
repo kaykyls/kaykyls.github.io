@@ -3,6 +3,8 @@ const navMenu = document.querySelector(".nav-menu")
 const themeBtn = document.querySelector(".theme-btn")
 const html = document.querySelector("html")
 const themeButtons = document.querySelectorAll(".theme-btn span")
+const header = document.querySelector("header")
+const backToTop = document.querySelector(".back-to-top")
 
 onload = () => {
     if (localStorage.getItem("theme")){
@@ -59,3 +61,32 @@ function toggleButtons() {
         localStorage.setItem("button", "moon")
     }
 }
+let previousScroll = 0
+
+onscroll = e => {
+    if(window.scrollY > 174 && window.scrollY > previousScroll) {
+        previousScroll = window.scrollY
+        header.style.top = "-100px"
+
+        backToTop.style.bottom = "-100px"
+    }
+    
+    else if (window.scrollY < previousScroll) {
+        if(window.scrollY <= 100) {
+            header.classList.remove("hasBackground")
+        } else {
+            header.classList.add("hasBackground")
+        }
+
+        previousScroll = window.scrollY
+        backToTop.style.bottom = "2rem"
+        header.style.top = "0px"
+        
+    }
+}
+
+backToTop.onclick = e => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0
+}
+
