@@ -24,6 +24,7 @@ body{
     --cor-principal-escura: #153556;
     --cor-secundaria: #86BBD8;
     --texto: #000;
+    --texto-secundaria: #6e6e6e;
 }
 
 .dark-mode {
@@ -33,6 +34,7 @@ body{
     --cor-principal-escura: #153556;
     --cor-secundaria: #86BBD8;
     --texto: #fff;
+    --texto-secundaria: #616161;
 }
 
 ul{

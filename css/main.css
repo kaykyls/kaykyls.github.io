@@ -1,28 +1,25 @@
-.main{
+.main-bg{
     display: flex;
+    height: 100vh;
 }
 
 .main-container{
     display: flex;
     justify-content: center;
     gap: 2rem;
-}
-
-.main-grid-texts{
-    width: 40ch;
+    margin: auto;
 }
 
 .main-grid-texts p{
-    margin-bottom: .4rem;
-}
-
-.main-grid-texts p:nth-child(2){
+    margin-bottom: 1rem;
+    color: var(--texto-secundaria);
     font-size: 2rem;
 }
 
+
 .main-grid-texts h1{
     font-size: 4rem;
-    margin: 0rem 0rem 1rem 0rem;
+    margin-bottom: 1rem;
 }
 
 .main-grid-texts .dev-text{
