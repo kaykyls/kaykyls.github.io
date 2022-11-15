@@ -74,11 +74,12 @@
         top: 0px;
         right: 0px;
         left: 0px;
-        height: 120px;
+        /* height: 120px; */
         display: flex;
     }
 
     .nav-container{
+        padding: 1rem 7vw;
         width: 100%;
         justify-content: space-between;
     }
@@ -124,7 +125,7 @@
     }
     
     .nav-menu-ativo{
-        top: 100px;
+        top: 80px;
     }
 }
 
