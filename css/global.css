@@ -47,7 +47,7 @@ ul{
     border-radius: 1rem;
     cursor: pointer;
     position: fixed;
-    bottom: -100px;
+    bottom: -200px;
     right: 2rem;
     transition: .3s;
 }
