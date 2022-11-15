@@ -1,11 +1,12 @@
 .button {
     background: linear-gradient(var(--cor-principal) 70%, var(--cor-principal-escura)) ;
     padding: 1rem 2rem;
-    border-radius: 6px;
+    border-radius: 10px;
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
     max-width: max-content;
+    border: 1px solid #000;
 }
 
 .button:hover{

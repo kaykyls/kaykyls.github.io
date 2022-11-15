@@ -61,6 +61,7 @@ function toggleButtons() {
         localStorage.setItem("button", "moon")
     }
 }
+
 let previousScroll = 0
 
 onscroll = e => {
