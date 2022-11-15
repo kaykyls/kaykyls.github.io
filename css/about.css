@@ -95,4 +95,8 @@
     .cert p{
         width: 8;
     }
+
+    .cert .button {
+        width: 8rem;
+    }
 }

@@ -58,7 +58,7 @@ img{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .main-grid-texts h1{
         font-size: 3rem;
     }
@@ -67,4 +67,8 @@ img{
         width: 15ch;
         font-size: 1.5rem;
     }
+
+    .main-grid-texts .button {
+        width: 10rem;
+    }    
 }

@@ -5,8 +5,7 @@
 }
 
 .projetos-bg h2 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 6rem;
     margin-bottom: 6rem;
     color: var(--cor-secundaria);
@@ -105,16 +104,25 @@
     cursor: pointer;
 }
 
-.projetos h2 {
-    text-align: center;
-}
-
 .projeto-info p {
     width: 20ch;
 }
 
 .projeto-info p:first-child {
     margin-bottom: .5rem;
+}
+
+@media(max-width: 1300px) {
+    .projetos-bg h2 {
+        font-size: 4rem;
+    }
+}
+
+@media(max-width: 1100px) {
+    .projetos-bg h2 {
+        text-align: left;
+    }
+   
 }
 
 @media (max-width: 700px) {
@@ -148,7 +156,13 @@
         display: inline-block;
     }
 
-    .projetos h2 {
+    .projetos-bg h2 {
         font-size: 3rem;
     }
 }
+
+/* @media (max-width: 400px){
+    .projetos h2 {
+        font-size: 2rem;
+    }
+} */
