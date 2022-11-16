@@ -7,10 +7,11 @@
     color: #ffffff;
     max-width: max-content;
     border: 1px solid #000;
+    transition: 0.3s;
 }
 
 .button:hover{
-    background: var(--cor-principal-escura);
+    background: linear-gradient(rgb(80, 141, 195), rgb(51, 103, 140));
     transition: 0.3s;
 }
 
