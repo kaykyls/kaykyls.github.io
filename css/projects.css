@@ -14,7 +14,7 @@
 .projetos-container {
     display: flex;
     justify-content: left;
-    overflow-x: scroll;
+    overflow-x: auto;
     gap: 3rem;
     max-width: 100vw;
     margin: 0 auto;
