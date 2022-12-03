@@ -25,6 +25,7 @@ body{
     --cor-secundaria: #86BBD8;
     --texto: #000;
     --texto-secundaria: #6e6e6e;
+    --back-to-top-bg: #adadaddb;
 }
 
 .dark-mode {
@@ -35,6 +36,7 @@ body{
     --cor-secundaria: #86BBD8;
     --texto: #fff;
     --texto-secundaria: #616161;
+    --back-to-top-bg: #343434db;
 }
 
 ul{
@@ -42,7 +44,7 @@ ul{
 }
 
 .back-to-top {
-    background: #343434db;
+    background: var(--back-to-top-bg);
     color: var(--texto);
     border-radius: 1rem;
     cursor: pointer;
@@ -50,6 +52,7 @@ ul{
     bottom: -200px;
     right: 2rem;
     transition: .3s;
+    display: flex;
 }
 
 .back-to-top span {
