@@ -68,6 +68,10 @@ header.hasBackground {
     display: none;
 }
 
+.theme-btn div span{
+    display: flex;
+}
+
 .theme-btn {
     transition: .1s;
     cursor: pointer;
