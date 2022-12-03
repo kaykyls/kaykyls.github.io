@@ -1,5 +1,5 @@
 const html = document.querySelector("html")
-const themeButtons = document.querySelectorAll(".theme-btn span")
+const themeButtons = document.querySelectorAll(".theme-btn div")
 
 export function handleLoad() {
     if (localStorage.getItem("theme")){
