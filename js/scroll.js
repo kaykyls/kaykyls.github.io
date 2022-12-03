@@ -1,12 +1,16 @@
 const backToTop = document.querySelector(".back-to-top")
 const header = document.querySelector("header")
+const navMenu = document.querySelector(".nav-menu")
 let previousScroll = 0
 
 export function handleScroll() {
     if(window.scrollY > 174 && window.scrollY > previousScroll) {
-        previousScroll = window.scrollY
-        header.style.top = "-200px"
+        if(!navMenu.classList.contains("nav-menu-ativo")) {
+            header.style.top = "-200px"
+        }
         backToTop.style.bottom = "-200px"
+        
+        previousScroll = window.scrollY
     }
     
     else if (window.scrollY < previousScroll) {
