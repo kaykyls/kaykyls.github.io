@@ -164,23 +164,23 @@
         <div class="contato-container container">
             <div class="contato-form-div">
                 <h2>CONTATO</h2>
-                <form action="" class="contato-form">
+                <form target="_blank" action="https://formsubmit.co/dev.kayky@gmail.com" method="post" class="contato-form">
                     <div class="form-info">
                         <div class="form-name">
                             <label for="name">Nome:</label>
-                            <input id="name" type="text" placeholder="Nome">
+                            <input name="name" id="name" type="text" placeholder="Nome" required>
                         </div>
                         <div class="form-email">
                             <label for="email">Email:</label>
-                            <input id="email" type="email" placeholder="Email">
+                            <input name="email" id="email" type="email" placeholder="Email" required>
                         </div>
                     </div>
 
                     <label for="subject">Assunto:</label>
-                    <input id="subject" type="text" placeholder="Assunto">
+                    <input id="subject" name="subject" type="text" placeholder="Assunto">
 
                     <label for="msg">Mensagem:</label>
-                    <textarea name="" id="msg" cols="30" rows="10" placeholder="Mensagem">Este formulário não vai para canto algum</textarea>
+                    <textarea name="message" id="msg" cols="30" rows="10" placeholder="Mensagem"></textarea>
                     <button class="button"><p>Enviar</p></button>
                 </form>
             </div>
