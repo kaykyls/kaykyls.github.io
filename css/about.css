@@ -1,17 +1,17 @@
-.sobre-bg{
+.about-bg{
     background: var(--background-secundario);
     display: flex;
     align-items: center;
     box-shadow: 0px 1px 3px var(--background-secundario);
 }
 
-.sobre-container{
+.about-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 
-.sobre-container h2{
+.about-container h2{
     text-align: right;
     font-size: 8rem;
     color: var(--cor-secundaria);
@@ -47,7 +47,7 @@
 }
 
 @media (max-width: 1300px) {
-    .sobre-container h2{
+    .about-container h2{
         font-size: 4rem;
     }
 
@@ -67,7 +67,7 @@
 }
 
 @media (max-width: 1100px) {
-    .sobre-container h2{
+    .about-container h2{
         text-align: left;
         margin: 0px;
     }
