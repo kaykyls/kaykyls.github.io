@@ -1,17 +1,17 @@
 .button {
-    background: linear-gradient(var(--cor-principal) 70%, var(--cor-principal-escura)) ;
+    background: linear-gradient(var(--cor-principal), var(--cor-principal-escura)) ;
     padding: 1rem 2rem;
     border-radius: 10px;
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
     max-width: max-content;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     transition: 0.3s;
 }
 
 .button:hover{
-    background: linear-gradient(rgb(80, 141, 195), rgb(51, 103, 140));
+    background: linear-gradient(#284f77, #0e253b);
     transition: 0.3s;
 }
 
@@ -38,7 +38,7 @@
     .button {
         display: block;
         text-align: center;
-        width: 8rem;
+        /* width: 8rem; */
         margin: 10px 0px 10px 0px;
     }
 }
@@ -47,7 +47,7 @@
     .button {
         display: block;
         text-align: center;
-        width: 6rem;
+        /* width: 6rem; */
         margin: 10px 0px 10px 0px;
     }
 }

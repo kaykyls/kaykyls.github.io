@@ -54,7 +54,7 @@ header.hasBackground {
     display: none;
 }
 
-.barra {
+.bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -105,15 +105,15 @@ header.hasBackground {
         cursor: pointer;
     }
     
-    .hamburger-menu-ativo .barra:nth-child(1){
+    .hamburger-menu-ativo .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
     }
 
-    .hamburger-menu-ativo .barra:nth-child(2){
+    .hamburger-menu-ativo .bar:nth-child(2){
         opacity: 0;
     }
     
-    .hamburger-menu-ativo .barra:nth-child(3){
+    .hamburger-menu-ativo .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
     

@@ -59,6 +59,8 @@
 .contact-form .button {
     width: 100%;
     margin-top: 1rem;
+    border: none;
+    cursor: pointer;
 }
 
 .contact-form .button p {

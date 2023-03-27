@@ -3,4 +3,9 @@
     display: flex;
     justify-content: space-between;
     padding: 2rem;
+}   
+
+.footer span:last-child {
+    text-align: end;
+    display: flex;
 }

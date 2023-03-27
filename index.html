@@ -33,9 +33,9 @@
                     <input id="checkbox" type="checkbox">
                 </ul>
                 <div class="hamburger-menu">
-                    <span class="barra"></span>
-                    <span class="barra"></span>
-                    <span class="barra"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
             </nav>
         </div>
@@ -51,8 +51,11 @@
                     <h1>Hi! <br> My name is <span id="kayky">Kayky</span></h1>
                     <p>Front-end developer</p>
                     <!-- <p>Bem-vindo(a) ao meu portfólio!</p> -->
-                    <a class="button" target="_blank" href="https://github.com/kaykyls">GitHub</a>
-                    <a class="button" target="_blank" href="https://www.linkedin.com/in/devkayky">LinkedIn</a>
+                    <div class="links-buttons">
+                        <a class="button" target="_blank" href="https://github.com/kaykyls">GitHub</a>
+                        <a class="button" target="_blank" href="https://www.linkedin.com/in/devkayky">LinkedIn</a>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -73,27 +76,71 @@
     
     <section class="skills-bg section" id="skills">
         <div class="skills-container container">
-            <h2 class="skills-text">SKILLS</h2>
-            <div class="skills-items">
-                <div class="skills-items-grid">
-                    <div class="icons">
-                        <img src="./img/html-5.png" alt="">
-                        <img src="./img/css-3.png" alt="">
-                        <img src="./img/js.png" alt="">
-                        <img src="./img/react.png" alt="">
-                        <img src="./img/node.png" alt="">
+            <div class="skills-wrapper">
+                <div class="skills-text">
+                    <h2>SKILLS</h2>
+                </div>
+                <div class="skills-items">
+                    <div class="skills-items-wrapper">
+                        <div class="front-end">
+                            <h3>Front-end</h3>
+                            <ul class="languages">
+                                <li class="language">
+                                    <div class="icon">
+                                        <img src="./img/react.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>React</span>
+                                    </div>
+                                </li>
+                                <li class="language">
+                                    <div class="icon">
+                                        <img src="./img/js.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>JavaScript</span>
+                                    </div>
+                                </li>
+                                <li class="language">
+                                        <div class="icon">
+                                            <img src="./img/html-5.png" alt="">
+                                        </div>
+                                        <div class="name">
+                                            <span>Html</span>
+                                        </div>
+                                    </li>
+                                    <li class="language">
+                                        <div class="icon">
+                                            <img src="./img/css-3.png" alt="">
+                                        </div>
+                                        <div class="name">
+                                            <span>Css</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                                
+                            <div class="back-end">
+                                <h3>Back-end</h3>
+    
+                                <ul class="languages">
+                                    <li class="language">
+                                        <div class="icon">
+                                            <img src="./img/node.png" alt="">
+    
+                                        </div>
+                                        <div class="name">
+                                            <span>Node JS</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="lang">
-                        <ul>
-                            <li>Html</li>
-                            <li>Css</li>
-                            <li>Javascript</li>
-                            <li>React</li>
-                            <li>Node</li>
-                        </ul>
-                    </div>
+                    
                 </div>
             </div>
+            
         </div>
     </section>
 
@@ -221,8 +268,8 @@
     </section>
 
     <footer class="footer">
-        <p>© Kayky</p>
-        <p>Alguns direitos reservados.</p>
+        <span>© Kayky</span>
+        <span>Alguns direitos reservados.</span>
     </footer>
 
     <div class="back-to-top">
