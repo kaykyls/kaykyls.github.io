@@ -144,7 +144,6 @@
 
 @media (max-width: 700px) {
     .project-info .button {
-        width: 20ch;
         display: inline-block;
     }
 }
