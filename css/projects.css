@@ -4,7 +4,10 @@
     padding: 120px 7vw;
 }
 
-.contact-form-div h2 {
+.projects-bg h2 {
+    text-align: center;
+    font-size: 6rem;
+    margin-bottom: 6rem;
     color: var(--cor-secundaria);
 }
 
