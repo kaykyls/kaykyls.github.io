@@ -15,6 +15,7 @@ header.hasBackground {
     display: flex;
     justify-content: space-between;
     padding: 2rem 7vw 2rem 7vw;
+    z-index: 999;
 }
 
 .navbar{
@@ -69,8 +70,9 @@ header.hasBackground {
     display: none;
 }
 
-.theme-btn div span{
+.toggle-theme-btn div span{
     display: flex;
+    color: var(--texto);
 }
 
 .theme-btn {
@@ -78,6 +80,13 @@ header.hasBackground {
     cursor: pointer;
     padding: 10px 20px;
     margin: 0px 15px;
+    display: flex;
+}
+
+.toggle-theme-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 @media (max-width: 1100px) {
@@ -89,6 +98,10 @@ header.hasBackground {
         left: 0px;
         /* height: 120px; */
         display: flex;
+    }
+
+    .navbar ul li a {
+        border-bottom: none;
     }
 
     .nav-container{
@@ -139,6 +152,10 @@ header.hasBackground {
     
     .nav-menu-ativo{
         top: 80px;
+    }
+
+    .theme-btn {
+        margin: 1rem;
     }
 }
 

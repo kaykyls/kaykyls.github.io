@@ -14,22 +14,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="./js/script.js" defer type="module"></script>
-    <script defer src="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-    "></script>
-    <link href="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-    " rel="stylesheet">
-    <link rel="stylesheet" href="url-to-cdn/splide.min.css">
-    <script defer>
-        new Splide( '.splide' ).mount();
-    </script>
-    <script defer>
-        document.addEventListener( 'DOMContentLoaded', function() {
-          var splide = new Splide( '.splide' );
-          splide.mount();
-        } );
-      </script>
 </head>
 <body>
     <header class="header">
@@ -43,8 +27,10 @@
                     <li><a class="nav-menu-link" href="#projects">Projects</a></li>
                     <li><a class="nav-menu-link" href="#contact">Contact</a></li>
                     <label class="theme-btn" for="checkbox">
-                        <div class="hidden"><span class="material-symbols-outlined">dark_mode</span></div>
-                        <div><span class="material-symbols-outlined">light_mode</span></div>
+                        <button class="toggle-theme-btn">
+                            <div class="hidden"><span class="material-symbols-outlined">dark_mode</span></div>
+                            <div><span class="material-symbols-outlined">light_mode</span></div>
+                        </button>  
                     </label>
                     <input id="checkbox" type="checkbox">
                 </ul>
@@ -158,55 +144,7 @@
             </div>
             
         </div>
-    </section>
-
-    <!-- 
-        <section class="splide" aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-                  <ul class="splide__list">
-
-                        <li class="project-bg">
-                            <div class="project-container">
-                                <div class="project-display">
-                                    <h3>Recipe App</h3>
-                                    <a href="https://kaykyls-todo-list.netlify.app/" target="_blank"><img src="./img/recipe-app.png" alt=""></a>
-                                </div>
-                                <div class="project-info">
-                                    <p>*IN DEVELOPMENT* A recipe app made with react</p>
-                                    <a class="button" href="https://github.com/kaykyls/recipe-app/" target="_blank">Repository</a>
-                                    <a class="button" href="https://kaykyls-recipe-app.netlify.app/" target="_blank">Live Preview</a>
-                                </div>
-                            </div>
-                        </li>
-                        
-                      <li class="splide__slide">
-                        <li class="project-bg">
-                            <div class="project-container">
-                                <div class="project-display">
-                                    <h3>Todo List</h3>
-                                    <a href="https://kaykyls-todo-list.netlify.app/" target="_blank"><img src="./img/todo-list.png" alt=""></a>
-                                </div>
-                                <div class="project-info">
-                                    <p>A task list made with React</p>
-                                    <a class="button" href="https://github.com/kaykyls/todo-list/" target="_blank">Repository</a>
-                                    <a class="button" href="https://kaykyls-todo-list.netlify.app/" target="_blank">Live Preview</a>
-                                </div>
-                            </div>
-                        </li>
-                      </li>
-                      <li class="splide__slide">
-
-                      </li>
-                      <li class="splide__slide">
-
-                    </li>
-                    <li class="splide__slide">
-
-                    </li>
-                  </ul>
-            </div>
-          </section> -->
-          
+    </section>        
           <section class="projects-bg" id="projects">
             <h2>PROJECTS</h2>
             <ul class="projects-container">
