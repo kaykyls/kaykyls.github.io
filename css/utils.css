@@ -6,7 +6,6 @@
     text-decoration: none;
     color: #ffffff;
     max-width: max-content;
-    /* border: 1px solid #000; */
     transition: 0.3s;
 }
 
@@ -38,7 +37,6 @@
     .button {
         display: block;
         text-align: center;
-        /* width: 8rem; */
         margin: 10px 0px 10px 0px;
     }
 }
@@ -47,7 +45,6 @@
     .button {
         display: block;
         text-align: center;
-        /* width: 6rem; */
         margin: 10px 0px 10px 0px;
     }
 }

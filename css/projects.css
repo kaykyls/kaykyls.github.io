@@ -14,7 +14,6 @@
 .projects-container {
     display: grid;
     justify-content: left;
-    /* overflow-x: auto; */
     gap: 2rem;
     max-width: 100vw;
     margin: 0 auto;
@@ -40,16 +39,9 @@
     background: var(--cor-principal);
 }
 
-/* 
-.project-container::-webkit-scrollbar-thumb:hover {
-    background: #d8d8d8; 
-} */
-
-
 .project-bg {
     background: var(--background-principal);
     border-radius: 6px;
-    /* padding: 10px 20px; */
     display: flex;   
     justify-content: center;
 }
@@ -161,10 +153,6 @@
     .project p {
         width: 22ch;
     }
-
-    /* .project-display, .project-info {
-        width: 300px;
-    } */
 
     .project .button {
         width: 100%;

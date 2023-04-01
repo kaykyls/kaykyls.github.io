@@ -21,7 +21,6 @@
 }
 
 .contact-form-div{
-    /* align-items: center; */
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -30,7 +29,6 @@
 
 .contact-form input, #msg{
     display: block;
-    /* margin: 0px auto 10px auto; */
     padding: 1rem 2rem;
     border-radius: 6px;
     border: #000 solid 2px;
