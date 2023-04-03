@@ -88,8 +88,10 @@
 .project-display img {
     object-fit: cover;
     width: 300px;
+    height: 300px;
     border-radius: 6px;
     transition: 0.2s;
+    object-fit: cover;
 }
 
 .project-display img:hover {
