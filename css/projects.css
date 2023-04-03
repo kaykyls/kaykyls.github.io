@@ -19,7 +19,6 @@
     margin: 0 auto;
     justify-content: flex-start;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 7rem;
 }
