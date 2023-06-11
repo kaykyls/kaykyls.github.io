@@ -78,6 +78,12 @@
 }
 
 @media (max-width: 1100px) {
+    .contact-form-div h2{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1100px) {
     .contact-form {
        max-width: 300px;
     }
